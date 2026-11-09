@@ -2149,13 +2149,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "vegas-zerkalo-99-14.jpg",
       "vegas-zerkalo-99-13.jpg",
+      "vegas-zerkalo-99-14.jpg",
       "vegas-zerkalo-99-18.jpg",
       "vegas-zerkalo-99-16.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "vegas-zerkalo-99-13.jpg",
     "interiorImage": "vegas-zerkalo-99-14.jpg",
     "quickSpecs": {
       "leaf": "80 мм.",
@@ -3889,14 +3888,14 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
+      "baykal17.0203bb5ef483f0165a12752955a3a08e.jpg",
       "baykal17.jpg",
       "baykal20.jpg",
-      "baykal17.0203bb5ef483f0165a12752955a3a08e.jpg",
       "baykal12.jpg",
       "baykal10.jpg"
     ],
-    "exteriorImage": "baykal17.jpg",
-    "interiorImage": "baykal20.jpg",
+    "exteriorImage": "baykal17.0203bb5ef483f0165a12752955a3a08e.jpg",
+    "interiorImage": "baykal17.jpg",
     "quickSpecs": {
       "leaf": "70 мм.",
       "box": "Утолщенный гнутый профиль. 2 контура уплотнения. Толщина (глубина) коробки 94 мм.",
@@ -6355,15 +6354,14 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-24-4.jpg",
       "fregat-24-3.jpg",
+      "fregat-24-4.jpg",
       "fregat-25-1.jpg",
       "fregat-25-2.jpg",
       "fregat-23-18.jpg",
       "fregat-23-21.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-24-3.jpg",
     "interiorImage": "fregat-24-4.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -6567,13 +6565,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-26-14.jpg",
       "fregat-26-13.jpg",
+      "fregat-26-14.jpg",
       "fregat-26-16.jpg",
       "fregat-26-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-26-13.jpg",
     "interiorImage": "fregat-26-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -6777,13 +6774,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-2024-3.jpg",
       "brig-2024-2.jpg",
+      "brig-2024-3.jpg",
       "brig-bz---20.jpg",
       "brig-bz---23.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-2024-2.jpg",
     "interiorImage": "brig-2024-3.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -6882,13 +6878,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-adapt-2-2026-13.jpg",
       "brig-adapt-2-2026-12.jpg",
+      "brig-adapt-2-2026-13.jpg",
       "brig-adapt-2-2026-15.jpg",
       "brig-adapt-2-2026-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-adapt-2-2026-12.jpg",
     "interiorImage": "brig-adapt-2-2026-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -8514,13 +8509,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-2024-2-2-2.jpg",
       "brig-2024-2-2-3.jpg",
+      "brig-2024-2-2-2.jpg",
       "brig---17.jpg",
       "brig---20.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-2024-2-2-3.jpg",
     "interiorImage": "brig-2024-2-2-2.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -8821,13 +8815,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-zerkalo24-4.jpg",
       "fregat-zerkalo24-3.jpg",
+      "fregat-zerkalo24-4.jpg",
       "fregat-zerkalo23-17.jpg",
       "fregat-zerkalo23-20.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-zerkalo24-3.jpg",
     "interiorImage": "fregat-zerkalo24-4.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -8927,13 +8920,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-zerkalo--26-14.jpg",
       "fregat-zerkalo--26-13.jpg",
+      "fregat-zerkalo--26-14.jpg",
       "fregat-zerkalo--26-16.jpg",
       "fregat-zerkalo--26-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-zerkalo--26-13.jpg",
     "interiorImage": "fregat-zerkalo--26-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -9343,13 +9335,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-zerk-adapt-2026-2-12.jpg",
       "brig-zerk-adapt-2026-2-11.jpg",
+      "brig-zerk-adapt-2026-2-12.jpg",
       "brig-zerk-adapt-2026-2-14.jpg",
       "brig-zerk-adapt-2026-2-16.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-zerk-adapt-2026-2-11.jpg",
     "interiorImage": "brig-zerk-adapt-2026-2-12.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -11902,13 +11893,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-t888-14.jpg",
       "fregat-t888-13.jpg",
+      "fregat-t888-14.jpg",
       "fregat-t888-16.jpg",
       "fregat-t888-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-t888-13.jpg",
     "interiorImage": "fregat-t888-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -12003,13 +11993,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-t888-2026-2-13.jpg",
       "brig-t888-2026-2-12.jpg",
+      "brig-t888-2026-2-13.jpg",
       "brig-t888-2026-2-15.jpg",
       "brig-t888-2026-2-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-t888-2026-2-12.jpg",
     "interiorImage": "brig-t888-2026-2-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -14136,13 +14125,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-zerk-t888-13.jpg",
       "fregat-zerk-t888-14.jpg",
+      "fregat-zerk-t888-13.jpg",
       "fregat-zerk-t888-16.jpg",
       "fregat-zerk-t888-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-zerk-t888-14.jpg",
     "interiorImage": "fregat-zerk-t888-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -14741,13 +14729,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-zerk-t888-2026-2-13.jpg",
       "brig-zerk-t888-2026-2-12.jpg",
+      "brig-zerk-t888-2026-2-13.jpg",
       "brig-zerk-t888-2026-2-15.jpg",
       "brig-zerk-t888-2026-2-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-zerk-t888-2026-2-12.jpg",
     "interiorImage": "brig-zerk-t888-2026-2-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -17298,13 +17285,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-r06-2-2026-13.jpg",
       "brig-r06-2-2026-12.jpg",
+      "brig-r06-2-2026-13.jpg",
       "brig-r06-2-2026-15.jpg",
       "brig-r06-2-2026-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-r06-2-2026-12.jpg",
     "interiorImage": "brig-r06-2-2026-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -17609,13 +17595,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-r06-14.jpg",
       "fregat-r06-13.jpg",
+      "fregat-r06-14.jpg",
       "fregat-r06-16.jpg",
       "fregat-r06-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-r06-13.jpg",
     "interiorImage": "fregat-r06-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -18914,13 +18899,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-zerk-r06-14.jpg",
       "fregat-zerk-r06-13.jpg",
+      "fregat-zerk-r06-14.jpg",
       "fregat-zerk-r06-16.jpg",
       "fregat-zerk-r06-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-zerk-r06-13.jpg",
     "interiorImage": "fregat-zerk-r06-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -19016,13 +19000,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-zerk-r06-2026-2-13.jpg",
       "brig-zerk-r06-2026-2-12.jpg",
+      "brig-zerk-r06-2026-2-13.jpg",
       "brig-zerk-r06-2026-2-15.jpg",
       "brig-zerk-r06-2026-2-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-zerk-r06-2026-2-12.jpg",
     "interiorImage": "brig-zerk-r06-2026-2-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -22241,13 +22224,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-y23-14.jpg",
       "fregat-y23-13.jpg",
+      "fregat-y23-14.jpg",
       "fregat-y23-16.jpg",
       "fregat-y23-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-y23-13.jpg",
     "interiorImage": "fregat-y23-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -22342,13 +22324,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-k06-14.jpg",
       "fregat-k06-13.jpg",
+      "fregat-k06-14.jpg",
       "fregat-k06-16.jpg",
       "fregat-k06-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-k06-13.jpg",
     "interiorImage": "fregat-k06-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -22544,13 +22525,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-y12-2-2026-13.jpg",
       "brig-y12-2-2026-12.jpg",
+      "brig-y12-2-2026-13.jpg",
       "brig-y12-2-2026-15.jpg",
       "brig-y12-2-2026-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-y12-2-2026-12.jpg",
     "interiorImage": "brig-y12-2-2026-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -22645,13 +22625,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-k06-2-2026-13.jpg",
       "brig-k06-2-2026-12.jpg",
+      "brig-k06-2-2026-13.jpg",
       "brig-k06-2-2026-15.jpg",
       "brig-k06-2-2026-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-k06-2-2026-12.jpg",
     "interiorImage": "brig-k06-2-2026-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -23050,13 +23029,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-y23-14.jpg",
       "fregat-y23-13.jpg",
+      "fregat-y23-14.jpg",
       "fregat-y23-16.jpg",
       "fregat-y23-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-y23-13.jpg",
     "interiorImage": "fregat-y23-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -23461,13 +23439,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-y23-2-2026-13.jpg",
       "brig-y23-2-2026-12.jpg",
+      "brig-y23-2-2026-13.jpg",
       "brig-y23-2-2026-15.jpg",
       "brig-y23-2-2026-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-y23-2-2026-12.jpg",
     "interiorImage": "brig-y23-2-2026-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -24981,13 +24958,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-zerk-y12-14.jpg",
       "fregat-zerk-y12-13.jpg",
+      "fregat-zerk-y12-14.jpg",
       "fregat-zerk-y12-16.jpg",
       "fregat-zerk-y12-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-zerk-y12-13.jpg",
     "interiorImage": "fregat-zerk-y12-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -25083,13 +25059,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-zerk-k06-14.jpg",
       "fregat-zerk-k06-13.jpg",
+      "fregat-zerk-k06-14.jpg",
       "fregat-zerk-k06-16.jpg",
       "fregat-zerk-k06-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-zerk-k06-13.jpg",
     "interiorImage": "fregat-zerk-k06-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -25185,13 +25160,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-zerk-y23-2026-2-13.jpg",
       "brig-zerk-y23-2026-2-12.jpg",
+      "brig-zerk-y23-2026-2-13.jpg",
       "brig-zerk-y23-2026-2-15.jpg",
       "brig-zerk-y23-2026-2-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-zerk-y23-2026-2-12.jpg",
     "interiorImage": "brig-zerk-y23-2026-2-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -25793,13 +25767,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-zerk-y23-2026-2-13.jpg",
       "brig-zerk-y12-2026-2-12.jpg",
+      "brig-zerk-y23-2026-2-13.jpg",
       "brig-zerk-y12-2026-2-15.jpg",
       "brig-zerk-y12-2026-2-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-zerk-y12-2026-2-12.jpg",
     "interiorImage": "brig-zerk-y23-2026-2-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -25896,13 +25869,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-zerk-k06-2026-2-13.jpg",
       "brig-zerk-k06-2026-2-12.jpg",
+      "brig-zerk-k06-2026-2-13.jpg",
       "brig-zerk-k06-2026-2-15.jpg",
       "brig-zerk-k06-2026-2-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-zerk-k06-2026-2-12.jpg",
     "interiorImage": "brig-zerk-k06-2026-2-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -26203,13 +26175,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-zerk-y23-14.jpg",
       "fregat-zerk-y23-13.jpg",
+      "fregat-zerk-y23-14.jpg",
       "fregat-zerk-y23-16.jpg",
       "fregat-zerk-y23-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-zerk-y23-13.jpg",
     "interiorImage": "fregat-zerk-y23-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -30532,13 +30503,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-dz888-14.jpg",
       "fregat-dz888-13.jpg",
+      "fregat-dz888-14.jpg",
       "fregat-dz888-16.jpg",
       "fregat-dz888-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-dz888-13.jpg",
     "interiorImage": "fregat-dz888-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -30633,13 +30603,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-dz888-2026-2-13.jpg",
       "brig-dz888-2026-2-12.jpg",
+      "brig-dz888-2026-2-13.jpg",
       "brig-dz888-2026-2-15.jpg",
       "brig-dz888-2026-2-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-dz888-2026-2-12.jpg",
     "interiorImage": "brig-dz888-2026-2-13.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -31337,13 +31306,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "irbis-i-2026-2-13.jpg",
       "irbis-i-2026-2-12.jpg",
+      "irbis-i-2026-2-13.jpg",
       "irbis-i-2026-2-15.jpg",
       "irbis-i-2026-2-17.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "irbis-i-2026-2-12.jpg",
     "interiorImage": "irbis-i-2026-2-13.jpg",
     "quickSpecs": {
       "leaf": "100 мм.",
@@ -31844,13 +31812,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "fregat-zerk-dz888-14.jpg",
       "fregat-zerk-dz888-13.jpg",
+      "fregat-zerk-dz888-14.jpg",
       "fregat-zerk-dz888-16.jpg",
       "fregat-zerk-dz888-18.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "fregat-zerk-dz888-13.jpg",
     "interiorImage": "fregat-zerk-dz888-14.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -32051,13 +32018,12 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
-      "procent10.png",
-      "brig-zerk-dz888-2026-2-12.jpg",
       "brig-zerk-dz888-2026-2-11.jpg",
+      "brig-zerk-dz888-2026-2-12.jpg",
       "brig-zerk-dz888-2026-2-14.jpg",
       "brig-zerk-dz888-2026-2-16.jpg"
     ],
-    "exteriorImage": "procent10.png",
+    "exteriorImage": "brig-zerk-dz888-2026-2-11.jpg",
     "interiorImage": "brig-zerk-dz888-2026-2-12.jpg",
     "quickSpecs": {
       "leaf": "110 мм.",
@@ -34084,14 +34050,14 @@ window.DOORS_DATA = [
     "oldPrice": null,
     "badge": "",
     "images": [
+      "lux-2026-10.c0a20c7b267fcc11998dab03b2016731.jpg",
       "lux-2026-10.jpg",
       "lux-2026-11.jpg",
-      "lux-2026-10.c0a20c7b267fcc11998dab03b2016731.jpg",
       "lux-2026-13.jpg",
       "lux-2026-15.jpg"
     ],
-    "exteriorImage": "lux-2026-10.jpg",
-    "interiorImage": "lux-2026-11.jpg",
+    "exteriorImage": "lux-2026-10.c0a20c7b267fcc11998dab03b2016731.jpg",
+    "interiorImage": "lux-2026-10.jpg",
     "quickSpecs": {
       "leaf": "100 мм.",
       "box": "2 контура уплотнения (1 - магнитный). Толщина (глубина) коробки 123 мм.",
@@ -35008,13 +34974,12 @@ window.DOORS_DATA = [
     "oldPrice": 28000,
     "badge": "",
     "images": [
-      "procent5.png",
       "formen-f8-sandal-beliy-12.jpg",
       "formen-f8-sandal-beliy-14.jpg",
       "formen-f8-sandal-beliy-16.jpg"
     ],
-    "exteriorImage": "procent5.png",
-    "interiorImage": "formen-f8-sandal-beliy-12.jpg",
+    "exteriorImage": "formen-f8-sandal-beliy-12.jpg",
+    "interiorImage": "formen-f8-sandal-beliy-14.jpg",
     "quickSpecs": {
       "leaf": "",
       "box": "",
@@ -35046,13 +35011,12 @@ window.DOORS_DATA = [
     "oldPrice": 28000,
     "badge": "",
     "images": [
-      "procent5.png",
       "formen-f8-sandal-beliy-12.jpg",
       "formen-f8-sandal-beliy-14.jpg",
       "formen-f8-sandal-beliy-16.jpg"
     ],
-    "exteriorImage": "procent5.png",
-    "interiorImage": "formen-f8-sandal-beliy-12.jpg",
+    "exteriorImage": "formen-f8-sandal-beliy-12.jpg",
+    "interiorImage": "formen-f8-sandal-beliy-14.jpg",
     "quickSpecs": {
       "leaf": "",
       "box": "",
@@ -35084,13 +35048,12 @@ window.DOORS_DATA = [
     "oldPrice": 28000,
     "badge": "",
     "images": [
-      "procent5.png",
       "formen-f8-venge-12.jpg",
       "formen-f8-sandal-beliy-14.jpg",
       "formen-f8-venge-16.jpg"
     ],
-    "exteriorImage": "procent5.png",
-    "interiorImage": "formen-f8-venge-12.jpg",
+    "exteriorImage": "formen-f8-venge-12.jpg",
+    "interiorImage": "formen-f8-sandal-beliy-14.jpg",
     "quickSpecs": {
       "leaf": "",
       "box": "",

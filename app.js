@@ -2,7 +2,7 @@
  * КАТАЛОГ СТАЛЬНЫХ ДВЕРЕЙ - APP LOGIC
  */
 
-document.addEventListener('DOMContentLoaded', () => {
+function initCatalogApp() {
   const doors = window.DOORS_DATA || [];
   if (!doors.length) {
     console.error('DOORS_DATA is empty or not loaded.');
@@ -78,6 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (sortSelect) sortSelect.value = state.sort;
 
   // --- FORMAT UTILS ---
+  const escapeAttr = (val) => (val || '').replace(/"/g, '&quot;');
+
   const formatPrice = (val) => {
     if (!val || val === 0) return 'По запросу';
     return val.toLocaleString('ru-RU') + ' ₽';
@@ -251,12 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${hasBothImgs ? '<div class="card-sides-hint">Снаружи / Внутри</div>' : ''}
           </div>
           <div class="card-body">
-            <h3 class="card-title" title="${door.title}">${door.name || door.title}</h3>
-            <div class="card-specs">
-              ${leaf}
-              ${box}
-              ${intFinish}
-            </div>
+            <h3 class="card-title" title="${escapeAttr(door.title)}">${door.name || door.title}</h3>
             <div class="card-footer">
               <div class="card-price-box">
                 ${oldPriceHtml}
@@ -453,6 +450,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalBackdrop.classList.add('is-open');
     document.body.style.overflow = 'hidden';
+    const modalBodyEl = modalBackdrop.querySelector('.modal-body');
+    if (modalBodyEl) modalBodyEl.scrollTop = 0;
   }
 
   function updateGalleryMain(imgFilename, altText) {
@@ -617,4 +616,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initial Filter Application & Render
   applyFilters();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCatalogApp);
+} else {
+  initCatalogApp();
+}

@@ -113,11 +113,14 @@ function initCatalogApp() {
     });
 
     function updateHeroDoorState() {
+      const heroWrapper = document.querySelector('.hero-stage-wrapper');
       if (state.isHeroDoorOpen) {
         interactiveDoorStage.classList.add('is-open');
+        if (heroWrapper) heroWrapper.classList.add('is-open');
         if (toggleDoorText) toggleDoorText.textContent = 'Закрыть дверь';
       } else {
         interactiveDoorStage.classList.remove('is-open');
+        if (heroWrapper) heroWrapper.classList.remove('is-open');
         if (toggleDoorText) toggleDoorText.textContent = 'Открыть дверь';
       }
     }
@@ -455,6 +458,8 @@ function initCatalogApp() {
 
     modalBackdrop.classList.add('is-open');
     document.body.style.overflow = 'hidden';
+    document.body.classList.add('modal-open');
+    document.documentElement.classList.add('modal-open');
     const modalBodyEl = modalBackdrop.querySelector('.modal-body');
     if (modalBodyEl) modalBodyEl.scrollTop = 0;
   }
@@ -476,6 +481,8 @@ function initCatalogApp() {
   function closeModal() {
     modalBackdrop.classList.remove('is-open');
     document.body.style.overflow = '';
+    document.body.classList.remove('modal-open');
+    document.documentElement.classList.remove('modal-open');
   }
 
   function switchModalTab(tabName) {

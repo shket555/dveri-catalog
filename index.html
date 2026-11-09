@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог стальных дверей</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+    <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="site-title">
+        <span>Каталог стальных дверей</span>
+        <span class="title-badge" id="totalCount">348 моделей</span>
+      </div>
+
+      <div class="header-actions">
+        <button id="mobileFiltersBtn" class="btn-mobile-filters" type="button">
+          <span>⚙️ Фильтры</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTERACTIVE 3D DOOR HERO SHOWCASE -->
+    <!-- INTERACTIVE 3D DOOR HERO SHOWCASE -->
+  <section class="hero-doors-showcase">
+    <div class="hero-stage-wrapper">
+      <div class="door-stage" id="interactiveDoorStage" title="Нажмите или наведите, чтобы открыть дверь">
+        
+        <!-- Outer Doorway Frame -->
+        <div class="doorway-frame">
+          
+          <!-- Interior Room (Pure Warm Atmospheric Light) -->
+          <div class="doorway-interior">
+            <div class="interior-light-glow"></div>
+          </div>
+
+          <!-- Floor Light Beam -->
+          <div class="floor-light-beam"></div>
+
+          <!-- 3D Door Leaf -->
+          <div class="door-leaf" id="interactiveDoorLeaf">
+            
+            <!-- Front Face (Exterior) -->
+            <div class="door-face-front">
+              
+              <!-- Heavy Duty Hinges on the Left -->
+              <div class="door-hinge hinge-top"></div>
+              <div class="door-hinge hinge-middle"></div>
+              <div class="door-hinge hinge-bottom"></div>
+
+              <!-- Recessed Architectural Panels / Molding -->
+              <div class="door-panels">
+                <div class="panel-box panel-top">
+                  <div class="panel-inner"></div>
+                </div>
+                <div class="panel-box panel-mid">
+                  <div class="panel-inner"></div>
+                </div>
+                <div class="panel-box panel-bot">
+                  <div class="panel-inner"></div>
+                </div>
+              </div>
+
+              <!-- Optical Wide Angle Peephole -->
+              <div class="door-peephole">
+                <div class="peephole-lens"></div>
+              </div>
+
+              <!-- Electronic Biometric Smart Lock & Handle -->
+              <div class="door-lock-system">
+                <div class="smart-lock-body">
+                  <div class="keypad-dots">
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="fingerprint-scanner">
+                    <div class="fp-ring"></div>
+                  </div>
+                </div>
+
+                <!-- Realistic 3D Handle -->
+                <div class="door-handle-assembly">
+                  <div class="handle-rosette"></div>
+                  <div class="handle-neck"></div>
+                  <div class="handle-lever">
+                    <div class="handle-highlight"></div>
+                  </div>
+                </div>
+
+                <!-- Keyhole Escutcheon -->
+                <div class="door-escutcheon">
+                  <div class="keyhole-slot"></div>
+                </div>
+              </div>
+
+              <!-- Stainless Steel Kickplate -->
+              <div class="door-kickplate"></div>
+
+            </div>
+
+            <!-- Realistic 3D Door Edge (Locking Mechanism) -->
+            <div class="door-edge">
+              
+              <!-- Top Lock Faceplate -->
+              <div class="lock-faceplate-top">
+                <div class="faceplate-screw"></div>
+                <div class="deadbolt-cylinder"></div>
+                <div class="deadbolt-cylinder"></div>
+                <div class="faceplate-screw"></div>
+              </div>
+
+              <!-- Main Lock Faceplate -->
+              <div class="lock-faceplate-main">
+                <div class="faceplate-screw"></div>
+                <div class="spring-latch"></div>
+                <div class="deadbolt-cylinder"></div>
+                <div class="deadbolt-cylinder"></div>
+                <div class="deadbolt-cylinder"></div>
+                <div class="faceplate-screw"></div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Bottom Threshold Step -->
+        <div class="doorway-threshold"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH BAR SECTION BELOW HERO -->
+  <section class="catalog-search-section">
+    <div class="search-section-container">
+      <div class="search-box wide-search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="Поиск дверей по названию, отделке или замкам..." autocomplete="off">
+        <button id="searchClear" class="search-clear" type="button" title="Очистить поиск">&times;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN LAYOUT -->
+  <div class="main-wrapper">
+
+    <!-- SIDEBAR FILTERS -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Фильтры</div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button id="resetFiltersBtn" class="btn-reset-filters" type="button">Сбросить всё</button>
+          <button id="closeSidebarBtn" class="btn-reset-filters" style="display: none; font-size: 1.2rem;" type="button" aria-label="Закрыть">&times;</button>
+        </div>
+      </div>
+
+      <!-- FILTER: PRICE -->
+      <div class="filter-group">
+        <div class="filter-group-title">По цене</div>
+        <div class="filter-options">
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="price" value="14000,25000">
+            <span>от 14 000 до 25 000 ₽</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="price" value="26000,34000">
+            <span>от 26 000 до 34 000 ₽</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="price" value="35000,110000">
+            <span>от 35 000 до 110 000 ₽</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="price" value="111000,600000">
+            <span>от 111 000 ₽</span>
+            <span class="filter-count"></span>
+          </label>
+        </div>
+        <div class="price-inputs">
+          <input type="number" id="minPriceInput" class="price-field" placeholder="Цена от, ₽" min="0" step="1000">
+          <input type="number" id="maxPriceInput" class="price-field" placeholder="до, ₽" min="0" step="1000">
+        </div>
+      </div>
+
+      <!-- FILTER: TRIM (ПО ОТДЕЛКЕ) -->
+      <div class="filter-group">
+        <div class="filter-group-title">По отделке</div>
+        <div class="filter-options">
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="trim" value="C зеркалом">
+            <span>С зеркалом</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="trim" value="Панель / Панель">
+            <span>Панель / Панель</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="trim" value="Металл / Панель">
+            <span>Металл / Панель</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="trim" value="Металл / Металл">
+            <span>Металл / Металл</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="trim" value="Белые двери">
+            <span>Белые двери</span>
+            <span class="filter-count"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- FILTER: CONSTRUCTION (ПО КОНСТРУКЦИИ) -->
+      <div class="filter-group">
+        <div class="filter-group-title">По конструкции</div>
+        <div class="filter-options">
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="construction" value="2-х контурные">
+            <span>2-х контурные</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="construction" value="3-х контурные">
+            <span>3-х контурные</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="construction" value="С терморазрывом">
+            <span>С терморазрывом</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="construction" value="С окном">
+            <span>С окном</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="construction" value="Двустворчатые">
+            <span>Двустворчатые</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="construction" value="С электронным замком">
+            <span>С электронным замком</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="construction" value="С адаптивной замковой частью">
+            <span>С адаптивной частью</span>
+            <span class="filter-count"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- FILTER: PURPOSE (ПО НАЗНАЧЕНИЮ) -->
+      <div class="filter-group">
+        <div class="filter-group-title">По назначению</div>
+        <div class="filter-options">
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="purpose" value="В квартиру">
+            <span>В квартиру</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="purpose" value="В частный дом">
+            <span>В частный дом</span>
+            <span class="filter-count"></span>
+          </label>
+          <label class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="purpose" value="Тамбурные">
+            <span>Тамбурные</span>
+            <span class="filter-count"></span>
+          </label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CATALOG CONTENT -->
+    <main class="catalog-content">
+      
+      <!-- TOOLBAR -->
+      <div class="catalog-toolbar">
+        <div class="results-count" id="resultsCount">Загрузка каталога...</div>
+        
+        <div class="sort-wrapper">
+          <span class="sort-label">Сортировка:</span>
+          <select id="sortSelect" class="sort-select">
+            <option value="price-asc">Сначала дешевле</option>
+            <option value="price-desc">Сначала дороже</option>
+            <option value="name-asc">По названию (А-Я)</option>
+            <option value="name-desc">По названию (Я-А)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ACTIVE FILTER CHIPS -->
+      <div class="active-filters-bar" id="activeChipsBar"></div>
+
+      <!-- PRODUCT CARDS GRID -->
+      <div class="doors-grid" id="doorsGrid">
+        <!-- Cards injected dynamically by app.js -->
+      </div>
+
+      <!-- LOAD MORE -->
+      <div class="load-more-box" id="loadMoreBox" style="display: none;">
+        <button id="loadMoreBtn" class="btn-load-more" type="button">Показать ещё двери</button>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- MODAL WINDOW (ХАРАКТЕРИСТИКИ И ОПИСАНИЕ) -->
+  <div class="modal-backdrop" id="doorModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      
+      <!-- MODAL HEADER -->
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <h2 class="modal-title" id="modalTitle">Стальная дверь</h2>
+          <span class="modal-price" id="modalPrice"></span>
+          <span class="modal-old-price" id="modalOldPrice"></span>
+        </div>
+        
+        <div class="modal-nav-btns">
+          <button id="modalPrevBtn" class="modal-nav-btn" type="button" title="Предыдущая модель (Стрелка влево)">←</button>
+          <button id="modalNextBtn" class="modal-nav-btn" type="button" title="Следующая модель (Стрелка вправо)">→</button>
+          <button id="modalCloseBtn" class="modal-close-btn" type="button" title="Закрыть окно (ESC)">&times;</button>
+        </div>
+      </div>
+
+      <!-- MODAL BODY -->
+      <div class="modal-body">
+        
+        <!-- LEFT: GALLERY -->
+        <div class="modal-gallery">
+          <div class="gallery-main">
+            <img id="galleryMainImg" class="gallery-main-img" src="" alt="Дверь">
+          </div>
+          <div class="gallery-thumbs" id="galleryThumbs">
+            <!-- Thumbs injected dynamically -->
+          </div>
+        </div>
+
+        <!-- RIGHT: SPECS & DESCRIPTION -->
+        <div class="modal-info-col">
+          <div class="modal-tabs">
+            <button id="tabSpecsBtn" class="modal-tab-btn active" type="button">Характеристики</button>
+            <button id="tabDescBtn" class="modal-tab-btn" type="button">Описание</button>
+          </div>
+
+          <!-- TAB PANE: SPECS -->
+          <div id="tabSpecsPane" class="tab-pane active">
+            <table class="specs-table">
+              <tbody id="modalSpecsTable">
+                <!-- Specs rows injected dynamically -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- TAB PANE: DESCRIPTION -->
+          <div id="tabDescPane" class="tab-pane">
+            <div class="desc-text" id="modalDescText">
+              <!-- Description text injected dynamically -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DATA & SCRIPTS -->
+  <script src="doors-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

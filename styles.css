@@ -1,0 +1,1635 @@
+/* ========================================================
+   КАТАЛОГ СТАЛЬНЫХ ДВЕРЕЙ - STYLES
+   Современный, чистый, адаптивный интерфейс
+   ======================================================== */
+
+:root {
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-surface: #f1f5f9;
+  --bg-surface-hover: #e2e8f0;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-light: #eff6ff;
+  --primary-border: #bfdbfe;
+  
+  --accent: #e11d48;
+  --accent-light: #ffe4e6;
+  
+  --success: #16a34a;
+  --success-light: #dcfce7;
+  
+  --border: #e2e8f0;
+  --border-focus: #3b82f6;
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  
+  --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========================================================
+   HEADER
+   ======================================================== */
+.site-header {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.site-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: -0.02em;
+}
+
+.title-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--primary-light);
+  color: var(--primary);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.search-box {
+  flex: 1;
+  max-width: 480px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 38px 10px 40px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: 1rem;
+  display: none;
+  padding: 4px;
+}
+
+.search-clear:hover {
+  color: var(--text-main);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-mobile-filters {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ========================================================
+   MAIN LAYOUT
+   ======================================================== */
+.main-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* ========================================================
+   SIDEBAR FILTERS
+   ======================================================== */
+.sidebar {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 90px;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: var(--radius-full);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.btn-reset-filters {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 0.825rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.btn-reset-filters:hover {
+  background: var(--primary-light);
+  text-decoration: underline;
+}
+
+.filter-group {
+  margin-bottom: 22px;
+}
+
+.filter-group-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--text-main);
+  cursor: pointer;
+  user-select: none;
+  padding: 2px 0;
+  transition: var(--transition);
+}
+
+.filter-option:hover {
+  color: var(--primary);
+}
+
+.filter-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--border);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+  transition: var(--transition);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.filter-checkbox:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.filter-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.filter-count {
+  margin-left: auto;
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+/* Custom Price Inputs */
+.price-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.price-field {
+  width: 50%;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+}
+
+.price-field:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  background: #fff;
+}
+
+/* ========================================================
+   CATALOG CONTENT AREA
+   ======================================================== */
+.catalog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Toolbar */
+.catalog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-card);
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.results-count {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.results-count strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.sort-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.sort-select {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  background: #fff;
+}
+
+/* Active Chips */
+.active-filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid var(--primary-border);
+  border-radius: var(--radius-full);
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+
+.filter-chip-remove {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+/* ========================================================
+   DOORS GRID
+   ======================================================== */
+.doors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.door-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  cursor: pointer;
+  position: relative;
+}
+
+.door-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: #cbd5e1;
+}
+
+/* Image container */
+.card-image-box {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  background: #fdfdfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.card-image-pair {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+}
+
+.card-door-img {
+  max-height: 100%;
+  max-width: 48%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.06));
+}
+
+.card-door-img.single-img {
+  max-width: 90%;
+}
+
+.door-card:hover .card-door-img {
+  transform: scale(1.03);
+}
+
+/* Badge */
+.card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  z-index: 2;
+}
+
+.badge-new {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-sale {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.badge-hit {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.badge-custom {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+/* Image side indicator */
+.card-sides-hint {
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+/* Card Body */
+.card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.35;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 2.7em;
+}
+
+.card-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+  flex: 1;
+}
+
+.card-spec-item {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-spec-item strong {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.card-price-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-old-price {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  text-decoration: line-through;
+  line-height: 1;
+}
+
+.card-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.1;
+}
+
+.card-btn {
+  padding: 7px 14px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid var(--primary-border);
+  border-radius: var(--radius-md);
+  font-size: 0.825rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.door-card:hover .card-btn {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* ========================================================
+   LOAD MORE & EMPTY STATE
+   ======================================================== */
+.load-more-box {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.btn-load-more {
+  padding: 12px 32px;
+  background: var(--bg-card);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-load-more:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+  grid-column: 1 / -1;
+}
+
+.empty-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: var(--text-light);
+}
+
+.empty-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.empty-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+/* ========================================================
+   MODAL WINDOW (ХАРАКТЕРИСТИКИ И ОПИСАНИЕ)
+   ======================================================== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(6px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+
+.modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  background: var(--bg-card);
+  width: 100%;
+  max-width: 1080px;
+  max-height: 90vh;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: scale(0.96) translateY(10px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.modal-backdrop.is-open .modal-container {
+  transform: scale(1) translateY(0);
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.modal-title-box {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.modal-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.modal-price {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.modal-old-price {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  text-decoration: line-through;
+}
+
+.modal-nav-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.modal-nav-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.modal-nav-btn:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+  border-color: var(--primary-border);
+}
+
+.modal-close-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.modal-close-btn:hover {
+  background: #fee2e2;
+  color: #ef4444;
+  border-color: #fca5a5;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 440px 1fr;
+  gap: 32px;
+  max-height: calc(90vh - 80px);
+}
+
+.modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-body::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: var(--radius-full);
+}
+
+/* Modal Gallery */
+.modal-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gallery-main {
+  width: 100%;
+  height: 480px;
+  background: #fdfdfd;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-main-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.08));
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.gallery-thumbs::-webkit-scrollbar {
+  height: 6px;
+}
+.gallery-thumbs::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: var(--radius-full);
+}
+
+.gallery-thumb-item {
+  width: 68px;
+  height: 80px;
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.gallery-thumb-item:hover {
+  border-color: #94a3b8;
+}
+
+.gallery-thumb-item.active {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.gallery-thumb-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Modal Tabs & Content */
+.modal-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid var(--border);
+}
+
+.modal-tab-btn {
+  padding: 10px 18px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.modal-tab-btn:hover {
+  color: var(--text-main);
+}
+
+.modal-tab-btn.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Characteristics Table */
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specs-table tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.specs-table tr:last-child {
+  border-bottom: none;
+}
+
+.specs-table td {
+  padding: 10px 12px;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  vertical-align: top;
+}
+
+.specs-table td.spec-key {
+  font-weight: 600;
+  color: var(--text-muted);
+  width: 40%;
+  background-color: rgba(248, 250, 252, 0.6);
+}
+
+.specs-table td.spec-val {
+  color: var(--text-main);
+  width: 60%;
+}
+
+.specs-table tr:hover td {
+  background-color: var(--primary-light);
+}
+
+/* Description Content */
+.desc-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #334155;
+}
+
+.desc-text p {
+  margin-bottom: 14px;
+}
+
+.desc-text strong {
+  color: var(--text-main);
+}
+
+/* ========================================================
+   RESPONSIVE DESIGN
+   ======================================================== */
+@media (max-width: 1024px) {
+  .main-wrapper {
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+    padding: 16px;
+  }
+  
+  .modal-body {
+    grid-template-columns: 360px 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-mobile-filters {
+    display: inline-flex;
+  }
+  
+  .main-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100vh;
+    z-index: 60;
+    border-radius: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+  
+  #closeSidebarBtn {
+    display: inline-block !important;
+  }
+  
+  .sidebar-header {
+    margin-top: 10px;
+  }
+  
+  .modal-body {
+    grid-template-columns: 1fr;
+    max-height: calc(85vh - 70px);
+  }
+  
+  .gallery-main {
+    height: 360px;
+  }
+}
+
+/* ========================================================
+   SEARCH BAR SECTION (BELOW HERO)
+   ======================================================== */
+.catalog-search-section {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.search-section-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wide-search-box {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.wide-search-box .search-input {
+  width: 100%;
+  padding: 14px 44px 14px 48px;
+  font-size: 1.05rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  background-color: var(--bg-surface);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.03);
+  transition: var(--transition);
+}
+
+.wide-search-box .search-input:focus {
+  background-color: #fff;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.wide-search-box .search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.15rem;
+  color: var(--text-muted);
+}
+
+.wide-search-box .search-clear {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+}
+
+/* ========================================================
+   HERO SHOWCASE (FOCUSED ONLY ON THE 3D DOOR)
+   ======================================================== */
+.hero-doors-showcase {
+  background: radial-gradient(circle at 50% 45%, #1e293b 0%, #0b1120 70%, #030712 100%);
+  padding: 40px 20px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-doors-showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 250px;
+  background: radial-gradient(ellipse at center top, rgba(96, 165, 250, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* 3D Stage Wrapper */
+.hero-stage-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.door-stage {
+  position: relative;
+  width: 270px;
+  height: 480px;
+  cursor: pointer;
+  perspective: 850px;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+/* Outer Doorway Frame */
+.doorway-frame {
+  position: absolute;
+  inset: 0;
+  border: 12px solid #1e293b;
+  border-top: 14px solid #334155;
+  border-left: 14px solid #1e293b;
+  border-right: 14px solid #0f172a;
+  border-bottom: 6px solid #475569;
+  border-radius: 4px 4px 0 0;
+  background: #020617;
+  box-shadow: 
+    0 16px 36px rgba(0, 0, 0, 0.7),
+    inset 0 0 20px rgba(0, 0, 0, 0.95);
+  overflow: visible;
+  transform-style: preserve-3d;
+}
+
+.doorway-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #09090b;
+  box-shadow: inset 0 0 6px #000;
+  pointer-events: none;
+}
+
+/* Interior Room Behind the Door (Pure Warm Atmospheric Light) */
+.doorway-interior {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #18181b 0%, #09090b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.interior-light-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(254, 240, 138, 0.85) 0%, rgba(245, 158, 11, 0.5) 45%, rgba(180, 83, 9, 0.2) 75%, transparent 100%);
+  opacity: 0.15;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s ease;
+  transform: scale(0.9);
+}
+
+.door-stage:hover .interior-light-glow,
+.door-stage.is-open .interior-light-glow {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+/* Floor Light Beam Projected Outward */
+.floor-light-beam {
+  position: absolute;
+  bottom: -45px;
+  left: 5px;
+  width: 260px;
+  height: 60px;
+  background: radial-gradient(ellipse at center top, rgba(254, 240, 138, 0.5) 0%, rgba(245, 158, 11, 0.25) 50%, transparent 80%);
+  transform: perspective(250px) rotateX(65deg) scaleX(0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 2;
+}
+
+.door-stage:hover .floor-light-beam,
+.door-stage.is-open .floor-light-beam {
+  opacity: 1;
+  transform: perspective(250px) rotateX(65deg) scaleX(1.15);
+}
+
+/* Stainless Steel Threshold Step */
+.doorway-threshold {
+  position: absolute;
+  bottom: -6px;
+  left: -10px;
+  right: -10px;
+  height: 8px;
+  background: linear-gradient(180deg, #e2e8f0 0%, #94a3b8 40%, #475569 80%, #1e293b 100%);
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+/* ========================================================
+   THE 3D DOOR LEAF (ROCK-SOLID HINGES & NATURAL PERSPECTIVE)
+   ======================================================== */
+.door-leaf {
+  position: absolute;
+  inset: 0;
+  transform-origin: 0% 50% 0px;
+  transform-style: preserve-3d;
+  transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.85s ease;
+  z-index: 5;
+}
+
+/* 3D PERSPECTIVE OPENING:
+   Rotates purely on the hinge axis (0% 50%).
+   The hinge edge remains 100% immobile on the frame, while the opening edge
+   naturally expands closer to the camera due to perspective! */
+.door-stage:hover .door-leaf,
+.door-stage.is-open .door-leaf {
+  transform: rotateY(-62deg);
+  box-shadow: 20px 14px 40px rgba(0, 0, 0, 0.75);
+}
+
+/* Front Face of the Door (Exterior) */
+.door-face-front {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #3f3f46 0%, #27272a 50%, #18181b 100%);
+  border: 1px solid #52525b;
+  border-radius: 2px;
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.7);
+  backface-visibility: hidden;
+}
+
+/* Solid Hinges on Left Edge */
+.door-hinge {
+  position: absolute;
+  left: -4px;
+  width: 6px;
+  height: 30px;
+  background: linear-gradient(180deg, #f1f5f9 0%, #94a3b8 35%, #475569 70%, #1e293b 100%);
+  border-radius: 3px;
+  box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+.hinge-top { top: 35px; }
+.hinge-middle { top: 220px; }
+.hinge-bottom { bottom: 45px; }
+
+/* Recessed Architectural Panels (Объемная фрезеровка) */
+.door-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 85%;
+  margin-top: 10px;
+}
+
+.panel-box {
+  background: linear-gradient(180deg, #27272a 0%, #18181b 100%);
+  border: 1px solid #52525b;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: inset 0 3px 8px rgba(0,0,0,0.7), 0 1px 2px rgba(255,255,255,0.06);
+}
+
+.panel-top { height: 110px; }
+.panel-mid { height: 130px; }
+.panel-bot { height: 90px; }
+
+.panel-inner {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 2px;
+}
+
+/* Optical Peephole */
+.door-peephole {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #cbd5e1 20%, #475569 80%, #0f172a 100%);
+  box-shadow: 0 0 0 2px #94a3b8, 0 2px 5px rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.peephole-lens {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #93c5fd 0%, #1e3a8a 100%);
+}
+
+/* Electronic Biometric Smart Lock */
+.door-lock-system {
+  position: absolute;
+  right: 18px;
+  top: 195px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 6;
+}
+
+.smart-lock-body {
+  width: 34px;
+  height: 80px;
+  background: linear-gradient(180deg, #18181b 0%, #09090b 100%);
+  border: 1.5px solid #3f3f46;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.8), inset 0 1px 2px rgba(255,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6px 4px;
+}
+
+.keypad-dots {
+  display: grid;
+  grid-template-columns: repeat(3, 4px);
+  gap: 3px;
+}
+
+.keypad-dots span {
+  width: 4px;
+  height: 4px;
+  background: rgba(147, 197, 253, 0.45);
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(96, 165, 250, 0.7);
+}
+
+.fingerprint-scanner {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1.5px solid #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 7px rgba(59, 130, 246, 0.7);
+  animation: fpPulse 2s infinite ease-in-out;
+}
+
+@keyframes fpPulse {
+  0%, 100% { border-color: #3b82f6; box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+  50% { border-color: #60a5fa; box-shadow: 0 0 9px rgba(96, 165, 250, 0.9); }
+}
+
+.fp-ring {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #3b82f6;
+}
+
+/* ========================================================
+   REALISTIC SOLID 3D DOOR HANDLE
+   ======================================================== */
+.door-handle-assembly {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: -2px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.7));
+}
+
+.handle-rosette {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f8fafc 15%, #cbd5e1 50%, #475569 90%, #1e293b 100%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6), inset 0 1px 1px rgba(255,255,255,0.8);
+  border: 1px solid #94a3b8;
+}
+
+.handle-neck {
+  position: absolute;
+  left: 8px;
+  width: 8px;
+  height: 10px;
+  background: linear-gradient(180deg, #94a3b8 0%, #475569 100%);
+  border-radius: 2px;
+}
+
+.handle-lever {
+  position: absolute;
+  left: 12px;
+  width: 48px;
+  height: 10px;
+  background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 25%, #94a3b8 55%, #475569 85%, #1e293b 100%);
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transform-origin: 0% 50%;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.handle-highlight {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  right: 2px;
+  height: 1.5px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 1px;
+}
+
+.door-stage:hover .handle-lever,
+.door-stage.is-open .handle-lever {
+  transform: rotate(14deg);
+}
+
+/* Keyhole Plate */
+.door-escutcheon {
+  width: 14px;
+  height: 22px;
+  background: linear-gradient(180deg, #e2e8f0 0%, #64748b 100%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+.keyhole-slot {
+  width: 2.5px;
+  height: 9px;
+  background: #09090b;
+  border-radius: 1px;
+}
+
+/* Stainless Steel Kickplate */
+.door-kickplate {
+  height: 16px;
+  width: 100%;
+  background: linear-gradient(180deg, #f1f5f9 0%, #cbd5e1 35%, #64748b 80%, #334155 100%);
+  border-radius: 1px;
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.6), 0 2px 4px rgba(0,0,0,0.5);
+  margin-top: 8px;
+}
+
+/* ========================================================
+   REALISTIC 3D DOOR EDGE (ТОРИЦ С МЕХАНИЗМОМ ЗАКРЫТИЯ)
+   ======================================================== */
+.door-edge {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  width: 24px;
+  background: linear-gradient(90deg, #18181b 0%, #27272a 40%, #3f3f46 70%, #18181b 100%);
+  border-left: 1px solid #3f3f46;
+  border-right: 1px solid #09090b;
+  transform-origin: 0% 50%;
+  transform: rotateY(90deg);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Hardware acceleration & 3D rendering */
+  backface-visibility: hidden;
+}
+
+.door-edge::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2px;
+  width: 3px;
+  background: #09090b;
+  box-shadow: inset 0 0 2px #000;
+}
+
+.door-edge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2px;
+  width: 3px;
+  background: #09090b;
+  box-shadow: inset 0 0 2px #000;
+}
+
+/* Heavy Steel Lock Faceplate (Торцевая планка замка) */
+.lock-faceplate-main {
+  position: absolute;
+  top: 175px;
+  width: 18px;
+  height: 155px;
+  background: linear-gradient(180deg, #f8fafc 0%, #cbd5e1 20%, #94a3b8 50%, #e2e8f0 80%, #64748b 100%);
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 0;
+  z-index: 2;
+}
+
+.lock-faceplate-top {
+  position: absolute;
+  top: 75px;
+  width: 18px;
+  height: 70px;
+  background: linear-gradient(180deg, #f8fafc 0%, #cbd5e1 20%, #94a3b8 50%, #e2e8f0 80%, #64748b 100%);
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6px 0;
+  z-index: 2;
+}
+
+.faceplate-screw {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #cbd5e1 40%, #475569 90%);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.6);
+  position: relative;
+}
+
+.faceplate-screw::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 2.5px;
+  width: 4px;
+  height: 1px;
+  background: #1e293b;
+}
+
+.deadbolt-cylinder {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #cbd5e1 35%, #475569 75%, #0f172a 100%);
+  border: 1px solid #94a3b8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.spring-latch {
+  width: 11px;
+  height: 14px;
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 45%, #64748b 100%);
+  border-radius: 1px 3px 3px 1px;
+  border: 1px solid #94a3b8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+}
+
+/* Responsive adjustments for phones */
+@media (max-width: 640px) {
+  .hero-doors-showcase {
+    padding: 24px 12px 32px;
+  }
+  .door-stage {
+    transform: scale(0.85);
+    margin: -30px 0;
+  }
+  .catalog-search-section {
+    padding: 12px 16px;
+  }
+  .wide-search-box .search-input {
+    font-size: 0.95rem;
+    padding: 12px 38px 12px 42px;
+  }
+}

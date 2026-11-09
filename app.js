@@ -254,6 +254,11 @@ function initCatalogApp() {
           </div>
           <div class="card-body">
             <h3 class="card-title" title="${escapeAttr(door.title)}">${door.name || door.title}</h3>
+            <div class="card-specs">
+              ${leaf}
+              ${box}
+              ${intFinish}
+            </div>
             <div class="card-footer">
               <div class="card-price-box">
                 ${oldPriceHtml}

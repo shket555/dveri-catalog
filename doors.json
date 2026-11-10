@@ -34969,109 +34969,292 @@
     "id": 346,
     "title": "Стальная дверь \"Формен Ф-8\" Номер двери ТДС-670 НОВАЯ 2050х960 правое открывание ФЛ 6 мм, муар черный с блестка внутри САНДАЛ БЕЛЫЙ",
     "name": "Стальная дверь \"Формен Ф-8\" Номер двери ТДС-670 НОВАЯ 2050х960 правое открывание ФЛ 6 мм, муар черный с блестка внутри САНДАЛ БЕЛЫЙ",
-    "price": 28000101623000,
+    "price": 23000,
     "oldPrice": 28000,
     "badge": "",
     "images": [
+      "formen-f8-venge-11.jpg",
       "formen-f8-sandal-beliy-12.jpg",
       "formen-f8-sandal-beliy-14.jpg",
       "formen-f8-sandal-beliy-16.jpg"
     ],
-    "exteriorImage": "formen-f8-sandal-beliy-12.jpg",
-    "interiorImage": "formen-f8-sandal-beliy-14.jpg",
+    "exteriorImage": "formen-f8-venge-11.jpg",
+    "interiorImage": "formen-f8-sandal-beliy-12.jpg",
     "quickSpecs": {
-      "leaf": "",
-      "box": "",
-      "exterior": "",
-      "interior": "",
-      "locks": "",
-      "insulation": ""
+      "leaf": "70 мм.",
+      "box": "2 контура уплотнения, глубина 94 мм.",
+      "exterior": "Лист 1,2 мм. Муар черный с блестками.",
+      "interior": "Панель ФЛ 6 мм. Сандал белый.",
+      "locks": "Galeon 811 (цил.) / Galeon 812 (сув.)",
+      "insulation": "Пенополистирол ПСБ-С15"
     },
     "filters": {
       "price": [
-        "111000,600000"
+        "14000,25000"
       ],
       "trim": [
+        "Металл / Панель",
         "Белые двери"
       ],
-      "construction": [],
+      "construction": [
+        "2-х контурные"
+      ],
       "purpose": [
         "В квартиру"
       ]
     },
-    "characteristics": [],
-    "description": "<p><strong style=\"padding: 0px; margin: 0px; box-sizing: border-box; font-family: liberation_sansregular; font-weight: bold; color: #231f20; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial;\"><strong style=\"padding: 0px; margin: 0px; box-sizing: border-box; font-family: liberation_sansregular; font-weight: bold;\"><span style=\"padding: 0px; margin: 0px; box-sizing: border-box;\"><span style=\"padding: 0px; margin: 0px; box-sizing: border-box; color: #f80628;\">Для официальных дилеров РУС скидка 50% от распродажной цены!</span></span></strong></strong></p>\n<p><strong>Дверная коробка</strong> 2 контура уплотнения. Толщина (глубина) коробки 94 мм.</p>\n<p><strong>Полотно</strong> 70 мм.</p>\n<p><strong>Покрытие</strong> Порошковое покрытие \"муар черный\".</p>\n<p><strong>Петли</strong> 2 петли с подшипником.</p>\n<p><strong>Внешняя отделка</strong> Лист металла 1,2 мм. Порошковое покрытие. Наличники гладкие.</p>\n<p><strong>Внутренняя отделка</strong> Панель ФЛ 6 мм. Цвет «Сандал белый». Объемная фрезеровка.</p>\n<p><strong>Замок нижний</strong> Galeon 811 (цилиндровый).</p>\n<p><strong>Замок верхний</strong> Galeon 812 (сувальдный).</p>\n<p><strong>Фурнитура</strong> Ручка, глазок на овальной розетке. Цвет фурнитуры \"хром\".  </p>\n<p><strong>Дополнительно</strong> Евроцилиндр К-В (перфокарта). Штырь противосъемный (3 шт).</p>\n<p><strong>Утепление</strong> Пенополистирол высокой плотности «ПСБ-С15».</p>\n<p><strong>Тип открывания</strong> Правое и левое.</p>\n<p><strong>Размер и вес блока</strong> 2050мм х 860мм - 40 кг; 2050мм х 960мм - 43 кг (возможно изготовление нестандартных размеров).</p>\n<p><strong>Упаковка</strong> (ВхШхГ)2150мм х 970мм х 110мм; 2150мм х 1070мм х 100мм.</p>"
+    "characteristics": [
+      {
+        "key": "Дверной короб",
+        "value": "2 контура уплотнения. Толщина (глубина) коробки 94 мм."
+      },
+      {
+        "key": "Полотно",
+        "value": "70 мм."
+      },
+      {
+        "key": "Покрытие металла",
+        "value": "Порошковое покрытие «муар чёрный с блёстками»."
+      },
+      {
+        "key": "Петли",
+        "value": "2 петли с подшипником."
+      },
+      {
+        "key": "Внешняя отделка",
+        "value": "Лист металла 1,2 мм. Порошковое покрытие. Наличники гладкие."
+      },
+      {
+        "key": "Внутренняя отделка",
+        "value": "Панель ФЛ 6 мм. Цвет «Сандал белый». Объёмная фрезеровка."
+      },
+      {
+        "key": "Замок нижний",
+        "value": "Galeon 811 (цилиндровый)."
+      },
+      {
+        "key": "Замок верхний",
+        "value": "Galeon 812 (сувальдный)."
+      },
+      {
+        "key": "Фурнитура",
+        "value": "Ручка, глазок на овальной розетке. Цвет фурнитуры «хром»."
+      },
+      {
+        "key": "Дополнительно",
+        "value": "Евроцилиндр К-В (перфокарта). Штырь противосъёмный (3 шт.)."
+      },
+      {
+        "key": "Утепление полотна",
+        "value": "Пенополистирол высокой плотности «ПСБ-С15»."
+      },
+      {
+        "key": "Тип открывания",
+        "value": "Правое открывание."
+      },
+      {
+        "key": "Размер и вес блока",
+        "value": "2050 мм × 960 мм — 43 кг."
+      },
+      {
+        "key": "Упаковка (ВхШхГ)",
+        "value": "2150 мм × 1070 мм × 100 мм."
+      }
+    ],
+    "description": "<p>Стальная дверь «Формен Ф-8» (ТДС-670) — новая входная дверь повышенной надёжности в размере 2050×960 мм правого открывания.</p>\n<p><strong>Дверная коробка:</strong> 2 контура уплотнения. Толщина коробки 94 мм.</p>\n<p><strong>Полотно:</strong> 70 мм.</p>\n<p><strong>Внешняя отделка:</strong> Лист металла 1,2 мм с прочным порошково-полимерным покрытием «муар чёрный с блёстками». Гладкие наличники.</p>\n<p><strong>Внутренняя отделка:</strong> Панель ФЛ 6 мм, цвет «Сандал белый» с объёмной фрезеровкой.</p>\n<p><strong>Замковая группа:</strong> Нижний цилиндровый замок Galeon 811, верхний сувальдный замок Galeon 812.</p>\n<p><strong>Фурнитура:</strong> Ручка и глазок на овальной розетке в цвете «хром».</p>\n<p><strong>Утепление:</strong> Пенополистирол высокой плотности «ПСБ-С15».</p>\n<p><strong>Размер блока:</strong> 2050 × 960 мм, правое открывание.</p>"
   },
   {
     "id": 347,
     "title": "Стальная дверь \"Формен Ф-8\" НОВЫЕ ДВЕРИ внутри САНДАЛ БЕЛЫЙ",
     "name": "Стальная дверь \"Формен Ф-8\" НОВЫЕ ДВЕРИ внутри САНДАЛ БЕЛЫЙ",
-    "price": 28000101623000,
+    "price": 23000,
     "oldPrice": 28000,
     "badge": "",
     "images": [
+      "formen-f8-venge-11.jpg",
       "formen-f8-sandal-beliy-12.jpg",
       "formen-f8-sandal-beliy-14.jpg",
       "formen-f8-sandal-beliy-16.jpg"
     ],
-    "exteriorImage": "formen-f8-sandal-beliy-12.jpg",
-    "interiorImage": "formen-f8-sandal-beliy-14.jpg",
+    "exteriorImage": "formen-f8-venge-11.jpg",
+    "interiorImage": "formen-f8-sandal-beliy-12.jpg",
     "quickSpecs": {
-      "leaf": "",
-      "box": "",
-      "exterior": "",
-      "interior": "",
-      "locks": "",
-      "insulation": ""
+      "leaf": "70 мм.",
+      "box": "2 контура уплотнения, глубина 94 мм.",
+      "exterior": "Лист 1,2 мм. Муар черный.",
+      "interior": "Панель ФЛ 6 мм. Сандал белый.",
+      "locks": "Galeon 811 (цил.) / Galeon 812 (сув.)",
+      "insulation": "Пенополистирол ПСБ-С15"
     },
     "filters": {
       "price": [
-        "111000,600000"
+        "14000,25000"
       ],
       "trim": [
+        "Металл / Панель",
         "Белые двери"
       ],
-      "construction": [],
+      "construction": [
+        "2-х контурные"
+      ],
       "purpose": [
         "В квартиру"
       ]
     },
-    "characteristics": [],
-    "description": "<p><strong style=\"padding: 0px; margin: 0px; box-sizing: border-box; font-family: liberation_sansregular; font-weight: bold; color: #231f20; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial;\"><strong style=\"padding: 0px; margin: 0px; box-sizing: border-box; font-family: liberation_sansregular; font-weight: bold;\"><span style=\"padding: 0px; margin: 0px; box-sizing: border-box;\"><span style=\"padding: 0px; margin: 0px; box-sizing: border-box; color: #f80628;\">Для официальных дилеров РУС скидка 50% от распродажной цены!</span></span></strong></strong></p>\n<p><strong>Дверная коробка</strong> 2 контура уплотнения. Толщина (глубина) коробки 94 мм.</p>\n<p><strong>Полотно</strong> 70 мм.</p>\n<p><strong>Покрытие</strong> Порошковое покрытие \"муар черный\".</p>\n<p><strong>Петли</strong> 2 петли с подшипником.</p>\n<p><strong>Внешняя отделка</strong> Лист металла 1,2 мм. Порошковое покрытие. Наличники гладкие.</p>\n<p><strong>Внутренняя отделка</strong> Панель ФЛ 6 мм. Цвет «Сандал белый». Объемная фрезеровка.</p>\n<p><strong>Замок нижний</strong> Galeon 811 (цилиндровый).</p>\n<p><strong>Замок верхний</strong> Galeon 812 (сувальдный).</p>\n<p><strong>Фурнитура</strong> Ручка, глазок на овальной розетке. Цвет фурнитуры \"хром\".  </p>\n<p><strong>Дополнительно</strong> Евроцилиндр К-В (перфокарта). Штырь противосъемный (3 шт).</p>\n<p><strong>Утепление</strong> Пенополистирол высокой плотности «ПСБ-С15».</p>\n<p><strong>Тип открывания</strong> Правое и левое.</p>\n<p><strong>Размер и вес блока</strong> 2050мм х 860мм - 40 кг; 2050мм х 960мм - 43 кг (возможно изготовление нестандартных размеров).</p>\n<p><strong>Упаковка</strong> (ВхШхГ)2150мм х 970мм х 110мм; 2150мм х 1070мм х 100мм.<br>\n </p>\n<p><strong>Стальная дверь \"Формен Ф-8\" внутри</strong> <strong>САНДАЛ БЕЛЫЙ</strong></p>"
+    "characteristics": [
+      {
+        "key": "Дверной короб",
+        "value": "2 контура уплотнения. Толщина (глубина) коробки 94 мм."
+      },
+      {
+        "key": "Полотно",
+        "value": "70 мм."
+      },
+      {
+        "key": "Покрытие металла",
+        "value": "Порошковое покрытие «муар чёрный»."
+      },
+      {
+        "key": "Петли",
+        "value": "2 петли с подшипником."
+      },
+      {
+        "key": "Внешняя отделка",
+        "value": "Лист металла 1,2 мм. Порошковое покрытие. Наличники гладкие."
+      },
+      {
+        "key": "Внутренняя отделка",
+        "value": "Панель ФЛ 6 мм. Цвет «Сандал белый». Объёмная фрезеровка."
+      },
+      {
+        "key": "Замок нижний",
+        "value": "Galeon 811 (цилиндровый)."
+      },
+      {
+        "key": "Замок верхний",
+        "value": "Galeon 812 (сувальдный)."
+      },
+      {
+        "key": "Фурнитура",
+        "value": "Ручка, глазок на овальной розетке. Цвет фурнитуры «хром»."
+      },
+      {
+        "key": "Дополнительно",
+        "value": "Евроцилиндр К-В (перфокарта). Штырь противосъёмный (3 шт.)."
+      },
+      {
+        "key": "Утепление полотна",
+        "value": "Пенополистирол высокой плотности «ПСБ-С15»."
+      },
+      {
+        "key": "Тип открывания",
+        "value": "Правое и левое открывание."
+      },
+      {
+        "key": "Размер и вес блока",
+        "value": "2050 мм × 860 мм — 40 кг; 2050 мм × 960 мм — 43 кг."
+      },
+      {
+        "key": "Упаковка (ВхШхГ)",
+        "value": "2150 мм × 970 мм × 110 мм; 2150 мм × 1070 мм × 100 мм."
+      }
+    ],
+    "description": "<p>Стальная дверь «Формен Ф-8» — современная входная дверь с надёжной звуко- и теплоизоляцией, выполненная во внутренней отделке «Сандал белый».</p>\n<p><strong>Дверная коробка:</strong> 2 контура уплотнения. Толщина коробки 94 мм.</p>\n<p><strong>Полотно:</strong> 70 мм.</p>\n<p><strong>Внешняя отделка:</strong> Лист металла 1,2 мм с порошково-полимерным покрытием «муар чёрный». Гладкие наличники.</p>\n<p><strong>Внутренняя отделка:</strong> Панель ФЛ 6 мм, цвет «Сандал белый» с объёмной фрезеровкой.</p>\n<p><strong>Замковая группа:</strong> Нижний цилиндровый замок Galeon 811, верхний сувальдный замок Galeon 812.</p>\n<p><strong>Фурнитура:</strong> Ручка, глазок на овальной розетке, цвет «хром».</p>\n<p><strong>Утепление:</strong> Пенополистирол высокой плотности «ПСБ-С15».</p>\n<p><strong>Размеры:</strong> 2050 × 860 мм и 2050 × 960 мм (правое / левое открывание).</p>"
   },
   {
     "id": 348,
     "title": "Стальная дверь \"Формен Ф-8\" ВЕНГЕ НОВЫЕ ДВЕРИ",
     "name": "Стальная дверь \"Формен Ф-8\" ВЕНГЕ НОВЫЕ ДВЕРИ",
-    "price": 28000101623000,
+    "price": 23000,
     "oldPrice": 28000,
     "badge": "",
     "images": [
+      "formen-f8-venge-11.jpg",
       "formen-f8-venge-12.jpg",
-      "formen-f8-sandal-beliy-14.jpg",
       "formen-f8-venge-16.jpg"
     ],
-    "exteriorImage": "formen-f8-venge-12.jpg",
-    "interiorImage": "formen-f8-sandal-beliy-14.jpg",
+    "exteriorImage": "formen-f8-venge-11.jpg",
+    "interiorImage": "formen-f8-venge-12.jpg",
     "quickSpecs": {
-      "leaf": "",
-      "box": "",
-      "exterior": "",
-      "interior": "",
-      "locks": "",
-      "insulation": ""
+      "leaf": "70 мм.",
+      "box": "2 контура уплотнения, глубина 94 мм.",
+      "exterior": "Лист 1,2 мм. Муар черный.",
+      "interior": "Панель ФЛ 6 мм. Венге.",
+      "locks": "Galeon 811 (цил.) / Galeon 812 (сув.)",
+      "insulation": "Пенополистирол ПСБ-С15"
     },
     "filters": {
       "price": [
-        "111000,600000"
+        "14000,25000"
       ],
-      "trim": [],
-      "construction": [],
+      "trim": [
+        "Металл / Панель"
+      ],
+      "construction": [
+        "2-х контурные"
+      ],
       "purpose": [
         "В квартиру"
       ]
     },
-    "characteristics": [],
-    "description": "<p><strong style=\"padding: 0px; margin: 0px; box-sizing: border-box; font-family: liberation_sansregular; font-weight: bold; color: #231f20; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial;\"><strong style=\"padding: 0px; margin: 0px; box-sizing: border-box; font-family: liberation_sansregular; font-weight: bold;\"><span style=\"padding: 0px; margin: 0px; box-sizing: border-box;\"><span style=\"padding: 0px; margin: 0px; box-sizing: border-box; color: #f80628;\">Для официальных дилеров РУС скидка 50% от распродажной цены!</span></span></strong></strong></p>\n<p><strong>Дверная коробка</strong> 2 контура уплотнения. Толщина (глубина) коробки 94 мм.</p>\n<p><strong>Полотно</strong> 70 мм.</p>\n<p><strong>Покрытие</strong> Порошковое покрытие \"муар черный\".</p>\n<p><strong>Петли</strong> 2 петли с подшипником.</p>\n<p><strong>Внешняя отделка</strong> Лист металла 1,2 мм. Порошковое покрытие. Наличники гладкие.</p>\n<p><strong>Внутренняя отделка</strong> Панель ФЛ 6 мм. Цвет «Венге». Объемная фрезеровка.</p>\n<p><strong>Замок нижний</strong> Galeon 811 (цилиндровый).</p>\n<p><strong>Замок верхний</strong> Galeon 812 (сувальдный).</p>\n<p><strong>Фурнитура</strong> Ручка, глазок на овальной розетке. Цвет фурнитуры \"хром\".  </p>\n<p><strong>Дополнительно</strong> Евроцилиндр К-В (перфокарта). Штырь противосъемный (3 шт).</p>\n<p><strong>Утепление</strong> Пенополистирол высокой плотности «ПСБ-С15».</p>\n<p><strong>Тип открывания</strong> Правое и левое.</p>\n<p><strong>Размер и вес блока</strong> 2050мм х 860мм - 40 кг; 2050мм х 960мм - 43 кг (возможно изготовление нестандартных размеров).</p>\n<p><strong>Упаковка</strong> (ВхШхГ)2150мм х 970мм х 110мм; 2150мм х 1070мм х 100мм.<br>\n </p>\n<p><strong>Стальная дверь \"Формен Ф-8\" внутри ВЕНГЕ</strong></p>"
+    "characteristics": [
+      {
+        "key": "Дверной короб",
+        "value": "2 контура уплотнения. Толщина (глубина) коробки 94 мм."
+      },
+      {
+        "key": "Полотно",
+        "value": "70 мм."
+      },
+      {
+        "key": "Покрытие металла",
+        "value": "Порошковое покрытие «муар чёрный»."
+      },
+      {
+        "key": "Петли",
+        "value": "2 петли с подшипником."
+      },
+      {
+        "key": "Внешняя отделка",
+        "value": "Лист металла 1,2 мм. Порошковое покрытие. Наличники гладкие."
+      },
+      {
+        "key": "Внутренняя отделка",
+        "value": "Панель ФЛ 6 мм. Цвет «Венге». Объёмная фрезеровка."
+      },
+      {
+        "key": "Замок нижний",
+        "value": "Galeon 811 (цилиндровый)."
+      },
+      {
+        "key": "Замок верхний",
+        "value": "Galeon 812 (сувальдный)."
+      },
+      {
+        "key": "Фурнитура",
+        "value": "Ручка, глазок на овальной розетке. Цвет фурнитуры «хром»."
+      },
+      {
+        "key": "Дополнительно",
+        "value": "Евроцилиндр К-В (перфокарта). Штырь противосъёмный (3 шт.)."
+      },
+      {
+        "key": "Утепление полотна",
+        "value": "Пенополистирол высокой плотности «ПСБ-С15»."
+      },
+      {
+        "key": "Тип открывания",
+        "value": "Правое и левое открывание."
+      },
+      {
+        "key": "Размер и вес блока",
+        "value": "2050 мм × 860 мм — 40 кг; 2050 мм × 960 мм — 43 кг."
+      },
+      {
+        "key": "Упаковка (ВхШхГ)",
+        "value": "2150 мм × 970 мм × 110 мм; 2150 мм × 1070 мм × 100 мм."
+      }
+    ],
+    "description": "<p>Стальная дверь «Формен Ф-8» — современная входная дверь с надёжной звуко- и теплоизоляцией, выполненная во внутренней отделке «Венге».</p>\n<p><strong>Дверная коробка:</strong> 2 контура уплотнения. Толщина коробки 94 мм.</p>\n<p><strong>Полотно:</strong> 70 мм.</p>\n<p><strong>Внешняя отделка:</strong> Лист металла 1,2 мм с порошково-полимерным покрытием «муар чёрный». Гладкие наличники.</p>\n<p><strong>Внутренняя отделка:</strong> Панель ФЛ 6 мм, цвет «Венге» с объёмной фрезеровкой.</p>\n<p><strong>Замковая группа:</strong> Нижний цилиндровый замок Galeon 811, верхний сувальдный замок Galeon 812.</p>\n<p><strong>Фурнитура:</strong> Ручка, глазок на овальной розетке, цвет «хром».</p>\n<p><strong>Утепление:</strong> Пенополистирол высокой плотности «ПСБ-С15».</p>\n<p><strong>Размеры:</strong> 2050 × 860 мм и 2050 × 960 мм (правое / левое открывание).</p>"
   }
 ]
